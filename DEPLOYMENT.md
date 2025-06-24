@@ -217,6 +217,12 @@ python server.py
 # Test di http://localhost:8000/index-optimized.html
 ```
 
+### 2. WhatsApp Integration Testing
+- ✅ Semua tombol "Konsultasi" mengarah ke WhatsApp
+- ✅ Nomor WhatsApp: +62 812-3456-7890
+- ✅ Pesan otomatis untuk konsultasi
+- ✅ Responsive di mobile dan desktop
+
 ### 2. Performance Testing
 - [PageSpeed Insights](https://pagespeed.web.dev/)
 - [GTmetrix](https://gtmetrix.com/)

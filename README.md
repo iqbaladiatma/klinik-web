@@ -28,7 +28,7 @@ Website profil perusahaan untuk Klinik MMC Blora dengan desain modern, bersih, d
 ### Fitur Umum
 - **Navigasi Responsif** dengan dropdown menu
 - **Contact Float** - Informasi kontak mengambang di setiap halaman
-- **Call-to-Action** - Tombol "Buat Janji Temu" di semua halaman
+- **Call-to-Action** - Tombol "Konsultasi" yang mengarah ke WhatsApp di semua halaman
 - **Smooth Scrolling** dan animasi fade-in
 - **Mobile-first Design**
 
@@ -42,7 +42,8 @@ Website profil perusahaan untuk Klinik MMC Blora dengan desain modern, bersih, d
 - **Interactive Contact Form** dengan validasi
 - **FAQ Accordion** yang dapat diklik
 - **Google Maps** integration
-- **WhatsApp Integration** untuk appointment booking
+- **WhatsApp Integration** untuk konsultasi langsung
+- **Smart Consultation System** dengan pesan otomatis berbeda per layanan
 
 ## 🛠️ Teknologi
 
