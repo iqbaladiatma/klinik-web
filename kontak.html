@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Klinik MMC Blora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>MMC Blora</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+                    <a href="layanan.html" class="nav-link">Layanan</a>
+                    <a href="tim-dokter.html" class="nav-link">Tim Dokter</a>
+                    <div class="dropdown">
+                        <a href="mmc-skincare.html" class="nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="mmc-skincare.html#produk">Produk</a>
+                            <a href="mmc-skincare.html#perawatan">Perawatan</a>
+                        </div>
+                    </div>
+                    <a href="kontak.html" class="nav-link active">Kontak</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu kebutuhan kesehatan Anda. Hubungi kami untuk informasi lebih lanjut atau buat janji temu</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Contact Information -->
+            <section class="section">
+                <div class="contact-main-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Kirim Pesan</h2>
+                        <form class="contact-form" onsubmit="submitContactForm(event)">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Layanan yang Diminati</label>
+                                <select id="service" name="service">
+                                    <option value="">Pilih Layanan</option>
+                                    <option value="konsultasi-umum">Konsultasi Umum</option>
+                                    <option value="spesialis">Konsultasi Spesialis</option>
+                                    <option value="laboratorium">Pemeriksaan Laboratorium</option>
+                                    <option value="radiologi">Pemeriksaan Radiologi</option>
+                                    <option value="mmc-skincare">MMC Skincare</option>
+                                    <option value="paket-kesehatan">Paket Kesehatan</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Pesan *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tuliskan pesan atau pertanyaan Anda..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-btn">Kirim Pesan</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <h2>Informasi Kontak</h2>
+                        
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Alamat</h4>
+                                <p>Jl. Pemuda No. 123, Blora, Jawa Tengah 58211</p>
+                                <a href="https://maps.google.com" target="_blank" class="btn btn-secondary btn-small">Lihat di Google Maps</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telepon</h4>
+                                <p>Utama: <a href="tel:+62296123456">(0296) 123-4567</a></p>
+                                <p>IGD: <a href="tel:+62296123456">(0296) 123-456</a></p>
+                                <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">0812-3456-7890</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>Umum: <a href="mailto:info@mmcblora.com">info@mmcblora.com</a></p>
+                                <p>Skincare: <a href="mailto:skincare@mmcblora.com">skincare@mmcblora.com</a></p>
+                                <p>Administrasi: <a href="mailto:admin@mmcblora.com">admin@mmcblora.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Jam Operasional</h4>
+                                <div class="schedule-list">
+                                    <div class="schedule-item">
+                                        <span class="day">Senin - Jumat</span>
+                                        <span class="time">08:00 - 21:00</span>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="day">Sabtu</span>
+                                        <span class="time">08:00 - 17:00</span>
+                                    </div>
+                                    <div class="schedule-item">
+                                        <span class="day">Minggu</span>
+                                        <span class="time">09:00 - 15:00</span>
+                                    </div>
+                                    <div class="schedule-item emergency">
+                                        <span class="day">IGD</span>
+                                        <span class="time">24 Jam</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="section">
+                <h2>Aksi Cepat</h2>
+                <div class="quick-actions-grid">
+                    <div class="quick-action-card">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <h3>Buat Janji Temu</h3>
+                        <p>Jadwalkan konsultasi dengan dokter pilihan Anda</p>
+                        <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                    </div>
+
+                    <div class="quick-action-card">
+                        <div class="quick-action-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>Chat WhatsApp</h3>
+                        <p>Hubungi kami langsung melalui WhatsApp untuk konsultasi cepat</p>
+                        <a href="https://wa.me/6281234567890" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat Sekarang
+                        </a>
+                    </div>
+
+                    <div class="quick-action-card">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Telepon Langsung</h3>
+                        <p>Hubungi hotline kami untuk informasi dan bantuan segera</p>
+                        <a href="tel:+62296123456" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Telepon Sekarang
+                        </a>
+                    </div>
+
+                    <div class="quick-action-card">
+                        <div class="quick-action-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3>Layanan Darurat</h3>
+                        <p>Untuk kondisi darurat, hubungi IGD kami yang siaga 24 jam</p>
+                        <a href="tel:+62296123456" class="btn btn-primary emergency-btn">
+                            <i class="fas fa-phone"></i> IGD 24 Jam
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location Map -->
+            <section class="section">
+                <h2>Lokasi Kami</h2>
+                <div class="map-section">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.123456789!2d111.41789!3d-6.96456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTIuNCJTIDExMcKwMjUnMDQuNCJF!5e0!3m2!1sen!2sid!4v1640000000000!5m2!1sen!2sid"
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <h3>Cara Menuju Klinik MMC Blora</h3>
+                        <div class="directions">
+                            <div class="direction-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <h4>Dengan Kendaraan Pribadi</h4>
+                                    <p>Dari pusat kota Blora, ambil arah ke Jl. Pemuda. Klinik berada di sebelah kanan jalan, dekat dengan Bank BCA.</p>
+                                </div>
+                            </div>
+                            <div class="direction-item">
+                                <i class="fas fa-bus"></i>
+                                <div>
+                                    <h4>Dengan Angkutan Umum</h4>
+                                    <p>Naik angkot jurusan Terminal-Pemuda, turun di depan Bank BCA. Klinik MMC Blora berada tepat di sebelahnya.</p>
+                                </div>
+                            </div>
+                            <div class="direction-item">
+                                <i class="fas fa-motorcycle"></i>
+                                <div>
+                                    <h4>Dengan Ojek Online</h4>
+                                    <p>Gunakan aplikasi ojek online dan cari "Klinik MMC Blora" atau masukkan alamat Jl. Pemuda No. 123.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parking-info">
+                            <h4><i class="fas fa-parking"></i> Parkir Tersedia</h4>
+                            <p>Kami menyediakan area parkir yang luas dan aman untuk kendaraan roda dua dan roda empat.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="section">
+                <h2>Pertanyaan Umum</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Apakah perlu membuat janji temu terlebih dahulu?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Untuk konsultasi dokter spesialis, kami sangat menyarankan untuk membuat janji temu terlebih dahulu. Untuk dokter umum, Anda bisa datang langsung, namun membuat janji akan memastikan waktu tunggu yang lebih singkat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Apakah menerima pasien BPJS?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, kami menerima pasien BPJS Kesehatan. Pastikan kartu BPJS Anda masih aktif dan bawa kartu identitas saat berkunjung.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Bagaimana cara mendapatkan hasil laboratorium?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hasil laboratorium biasanya dapat diambil 1-2 hari setelah pemeriksaan. Kami akan menghubungi Anda ketika hasil sudah siap. Anda juga bisa menanyakan langsung ke bagian laboratorium.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h4>Apakah ada layanan home visit?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, kami menyediakan layanan kunjungan rumah untuk kondisi tertentu. Silakan hubungi kami untuk informasi lebih lanjut mengenai layanan ini.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>(0296) 123-4567</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@mmcblora.com</span>
+            </div>
+        </div>
+        <button class="cta-btn" onclick="buatJanji()">
+            <i class="fas fa-calendar-plus"></i>
+            Buat Janji
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Klinik MMC Blora</h3>
+                    <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="layanan.html">Konsultasi Umum</a></li>
+                        <li><a href="mmc-skincare.html">MMC Skincare</a></li>
+                        <li><a href="layanan.html">Laboratorium</a></li>
+                        <li><a href="layanan.html">Radiologi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+                        <p><i class="fas fa-phone"></i> (0296) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@mmcblora.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <div class="hours">
+                        <p>Senin - Jumat: 08:00 - 21:00</p>
+                        <p>Sabtu: 08:00 - 17:00</p>
+                        <p>Minggu: 09:00 - 15:00</p>
+                        <p class="emergency">IGD: 24 Jam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = element.querySelector('i');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                answer.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>

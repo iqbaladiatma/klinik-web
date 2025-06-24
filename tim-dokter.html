@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Dokter - Klinik MMC Blora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>MMC Blora</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+                    <a href="layanan.html" class="nav-link">Layanan</a>
+                    <a href="tim-dokter.html" class="nav-link active">Tim Dokter</a>
+                    <div class="dropdown">
+                        <a href="mmc-skincare.html" class="nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="mmc-skincare.html#produk">Produk</a>
+                            <a href="mmc-skincare.html#perawatan">Perawatan</a>
+                        </div>
+                    </div>
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Tim Dokter Kami</h1>
+            <p>Bertemu dengan tim medis profesional yang berpengalaman dan berdedikasi untuk kesehatan Anda</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Dokter Spesialis -->
+            <section class="section">
+                <h2>Dokter Spesialis</h2>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Ahmad Wijaya">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Ahmad Wijaya, Sp.JP</h3>
+                            <p class="doctor-specialty">Spesialis Jantung dan Pembuluh Darah</p>
+                            <p class="doctor-experience">15+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Gadjah Mada</li>
+                                    <li>Sp.JP - Universitas Indonesia</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Senin, Rabu, Jumat: 14:00 - 17:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Sarah Putri">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Putri, Sp.OG</h3>
+                            <p class="doctor-specialty">Spesialis Obstetri dan Ginekologi</p>
+                            <p class="doctor-experience">12+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Airlangga</li>
+                                    <li>Sp.OG - Universitas Padjadjaran</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Selasa, Kamis, Sabtu: 13:00 - 16:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Budi Santoso">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Budi Santoso, Sp.A</h3>
+                            <p class="doctor-specialty">Spesialis Anak</p>
+                            <p class="doctor-experience">10+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Diponegoro</li>
+                                    <li>Sp.A - Universitas Indonesia</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Setiap hari: 08:00 - 21:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1594824388857-575a2fe8d4c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Maya Sari">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Maya Sari, Sp.M</h3>
+                            <p class="doctor-specialty">Spesialis Mata</p>
+                            <p class="doctor-experience">8+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Sebelas Maret</li>
+                                    <li>Sp.M - Universitas Gadjah Mada</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Rabu, Sabtu: 09:00 - 12:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Rahmat Hidayat">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Rahmat Hidayat, Sp.OT</h3>
+                            <p class="doctor-specialty">Spesialis Ortopedi</p>
+                            <p class="doctor-experience">11+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Brawijaya</li>
+                                    <li>Sp.OT - Universitas Indonesia</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Senin, Kamis: 15:00 - 18:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1609902726285-00668009b004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Anita Dewi">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Anita Dewi, Sp.KK</h3>
+                            <p class="doctor-specialty">Spesialis Kulit dan Kelamin</p>
+                            <p class="doctor-experience">9+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Gadjah Mada</li>
+                                    <li>Sp.KK - Universitas Indonesia</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Setiap hari: 09:00 - 20:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dokter Umum -->
+            <section class="section">
+                <h2>Dokter Umum</h2>
+                <div class="doctors-grid general-doctors">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1551601651-2310e8fb4e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Dimas Pratama">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Dimas Pratama</h3>
+                            <p class="doctor-specialty">Dokter Umum</p>
+                            <p class="doctor-experience">7+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Diponegoro</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Senin - Jumat: 08:00 - 15:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Lisa Anggraeni">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Lisa Anggraeni</h3>
+                            <p class="doctor-specialty">Dokter Umum</p>
+                            <p class="doctor-experience">5+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Sebelas Maret</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Senin - Jumat: 15:00 - 21:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Dr. Agus Firmansyah">
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Agus Firmansyah</h3>
+                            <p class="doctor-specialty">Dokter Umum</p>
+                            <p class="doctor-experience">6+ tahun pengalaman</p>
+                            <div class="doctor-education">
+                                <h4>Pendidikan:</h4>
+                                <ul>
+                                    <li>S1 Kedokteran - Universitas Airlangga</li>
+                                </ul>
+                            </div>
+                            <div class="doctor-schedule">
+                                <h4>Jadwal Praktek:</h4>
+                                <p>Sabtu - Minggu: 08:00 - 17:00</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tim Medis Pendukung -->
+            <section class="section">
+                <h2>Tim Medis Pendukung</h2>
+                <div class="support-team-grid">
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <h4>Perawat Profesional</h4>
+                        <p>Tim perawat bersertifikat dengan pengalaman dalam berbagai bidang perawatan medis</p>
+                        <div class="support-count">
+                            <span class="count-number">15+</span>
+                            <span class="count-label">Perawat</span>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Teknisi Laboratorium</h4>
+                        <p>Teknisi berpengalaman untuk pemeriksaan laboratorium yang akurat dan cepat</p>
+                        <div class="support-count">
+                            <span class="count-number">8+</span>
+                            <span class="count-label">Teknisi</span>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4>Apoteker</h4>
+                        <p>Apoteker bersertifikat untuk konsultasi obat dan pelayanan farmasi</p>
+                        <div class="support-count">
+                            <span class="count-number">4+</span>
+                            <span class="count-label">Apoteker</span>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Radiografer</h4>
+                        <p>Teknisi radiologi untuk pemeriksaan rontgen, USG, dan radiologi lainnya</p>
+                        <div class="support-count">
+                            <span class="count-number">6+</span>
+                            <span class="count-label">Radiografer</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Konsultasi dengan Tim Medis Terbaik</h2>
+                    <p>Dapatkan pelayanan kesehatan terbaik dari tim dokter dan tenaga medis yang berpengalaman</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" onclick="buatJanji()">Buat Janji Konsultasi</a>
+                        <a href="layanan.html" class="btn btn-secondary">Lihat Layanan</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>(0296) 123-4567</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@mmcblora.com</span>
+            </div>
+        </div>
+        <button class="cta-btn" onclick="buatJanji()">
+            <i class="fas fa-calendar-plus"></i>
+            Buat Janji
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Klinik MMC Blora</h3>
+                    <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="layanan.html">Konsultasi Umum</a></li>
+                        <li><a href="mmc-skincare.html">MMC Skincare</a></li>
+                        <li><a href="layanan.html">Laboratorium</a></li>
+                        <li><a href="layanan.html">Radiologi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+                        <p><i class="fas fa-phone"></i> (0296) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@mmcblora.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <div class="hours">
+                        <p>Senin - Jumat: 08:00 - 21:00</p>
+                        <p>Sabtu: 08:00 - 17:00</p>
+                        <p>Minggu: 09:00 - 15:00</p>
+                        <p class="emergency">IGD: 24 Jam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

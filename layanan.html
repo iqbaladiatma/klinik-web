@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Klinik MMC Blora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>MMC Blora</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+                    <a href="layanan.html" class="nav-link active">Layanan</a>
+                    <a href="tim-dokter.html" class="nav-link">Tim Dokter</a>
+                    <div class="dropdown">
+                        <a href="mmc-skincare.html" class="nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="mmc-skincare.html#produk">Produk</a>
+                            <a href="mmc-skincare.html#perawatan">Perawatan</a>
+                        </div>
+                    </div>
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Layanan Kami</h1>
+            <p>Layanan kesehatan lengkap dan terpadu untuk memenuhi kebutuhan Anda dan keluarga</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <div class="container">
+            <!-- Layanan Utama -->
+            <section class="section">
+                <h2>Layanan Utama</h2>
+                <div class="services-main-grid">
+                    <div class="service-main-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1576089872958-6f9b5c7c4e8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Konsultasi Umum">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3>Konsultasi Umum</h3>
+                            <p>Pemeriksaan kesehatan umum dengan dokter berpengalaman. Konsultasi untuk berbagai keluhan kesehatan dan pemeriksaan rutin.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Pemeriksaan fisik lengkap</li>
+                                <li><i class="fas fa-check"></i> Konsultasi kesehatan</li>
+                                <li><i class="fas fa-check"></i> Pemeriksaan rutin</li>
+                                <li><i class="fas fa-check"></i> Resep obat</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price">Mulai dari Rp 75.000</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="service-main-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Laboratorium">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h3>Laboratorium</h3>
+                            <p>Pemeriksaan laboratorium lengkap dengan peralatan modern dan hasil yang akurat untuk mendukung diagnosis yang tepat.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Tes darah lengkap</li>
+                                <li><i class="fas fa-check"></i> Tes urine</li>
+                                <li><i class="fas fa-check"></i> Tes gula darah</li>
+                                <li><i class="fas fa-check"></i> Tes kolesterol</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price">Mulai dari Rp 50.000</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+
+                    <div class="service-main-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Radiologi">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <h3>Radiologi</h3>
+                            <p>Pemeriksaan radiologi dengan teknologi terkini untuk mendapatkan gambaran yang jelas dari kondisi internal tubuh.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Foto Rontgen</li>
+                                <li><i class="fas fa-check"></i> USG</li>
+                                <li><i class="fas fa-check"></i> EKG</li>
+                                <li><i class="fas fa-check"></i> Mammografi</li>
+                            </ul>
+                            <div class="service-price">
+                                <span class="price">Mulai dari Rp 100.000</span>
+                            </div>
+                            <button class="btn btn-primary" onclick="buatJanji()">Buat Janji</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layanan Spesialis -->
+            <section class="section">
+                <h2>Layanan Spesialis</h2>
+                <div class="services-specialist-grid">
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Kardiologi</h4>
+                        <p>Pemeriksaan dan pengobatan penyakit jantung dan pembuluh darah</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Senin, Rabu, Jumat</p>
+                            <p><strong>Waktu:</strong> 14:00 - 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Pediatri</h4>
+                        <p>Layanan kesehatan khusus untuk bayi, anak, dan remaja</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Setiap hari</p>
+                            <p><strong>Waktu:</strong> 08:00 - 21:00</p>
+                        </div>
+                    </div>
+
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h4>Obstetri & Ginekologi</h4>
+                        <p>Layanan kesehatan reproduksi wanita dan kehamilan</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Selasa, Kamis, Sabtu</p>
+                            <p><strong>Waktu:</strong> 13:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h4>Ortopedi</h4>
+                        <p>Pengobatan cedera dan gangguan sistem muskuloskeletal</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Senin, Kamis</p>
+                            <p><strong>Waktu:</strong> 15:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Oftalmologi</h4>
+                        <p>Pemeriksaan dan pengobatan gangguan mata</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Rabu, Sabtu</p>
+                            <p><strong>Waktu:</strong> 09:00 - 12:00</p>
+                        </div>
+                    </div>
+
+                    <div class="specialist-card">
+                        <div class="specialist-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>MMC Skincare</h4>
+                        <p>Perawatan kulit dan kecantikan dengan teknologi terdepan</p>
+                        <div class="specialist-schedule">
+                            <p><strong>Jadwal:</strong> Setiap hari</p>
+                            <p><strong>Waktu:</strong> 09:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layanan Darurat -->
+            <section class="section">
+                <h2>Layanan Darurat</h2>
+                <div class="emergency-services">
+                    <div class="emergency-card">
+                        <div class="emergency-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <div class="emergency-content">
+                            <h3>IGD 24 Jam</h3>
+                            <p>Layanan gawat darurat 24 jam dengan tim medis siaga dan peralatan lengkap untuk menangani kondisi darurat.</p>
+                            <div class="emergency-contact">
+                                <p><strong>Hotline IGD:</strong> <a href="tel:+62296123456">(0296) 123-456</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-card">
+                        <div class="emergency-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="emergency-content">
+                            <h3>Konsultasi Telepon</h3>
+                            <p>Layanan konsultasi medis melalui telepon untuk kondisi non-darurat dan pertanyaan kesehatan umum.</p>
+                            <div class="emergency-contact">
+                                <p><strong>Telepon:</strong> <a href="tel:+62296123457">(0296) 123-457</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paket Kesehatan -->
+            <section class="section">
+                <h2>Paket Kesehatan</h2>
+                <div class="health-packages">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Paket Basic</h3>
+                            <div class="package-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">250.000</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Konsultasi dokter umum</li>
+                                <li><i class="fas fa-check"></i> Pemeriksaan fisik</li>
+                                <li><i class="fas fa-check"></i> Tes darah rutin</li>
+                                <li><i class="fas fa-check"></i> Tes urine</li>
+                                <li><i class="fas fa-check"></i> EKG</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn" onclick="buatJanji()">Pilih Paket</button>
+                        </div>
+                    </div>
+
+                    <div class="package-card featured">
+                        <div class="package-badge">Terpopuler</div>
+                        <div class="package-header">
+                            <h3>Paket Premium</h3>
+                            <div class="package-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">450.000</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Semua fitur Paket Basic</li>
+                                <li><i class="fas fa-check"></i> Konsultasi spesialis</li>
+                                <li><i class="fas fa-check"></i> Foto Rontgen</li>
+                                <li><i class="fas fa-check"></i> USG</li>
+                                <li><i class="fas fa-check"></i> Tes kolesterol</li>
+                                <li><i class="fas fa-check"></i> Tes gula darah</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn" onclick="buatJanji()">Pilih Paket</button>
+                        </div>
+                    </div>
+
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Paket Executive</h3>
+                            <div class="package-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">750.000</span>
+                            </div>
+                        </div>
+                        <div class="package-content">
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Semua fitur Paket Premium</li>
+                                <li><i class="fas fa-check"></i> Pemeriksaan mata</li>
+                                <li><i class="fas fa-check"></i> Konsultasi gizi</li>
+                                <li><i class="fas fa-check"></i> Tes fungsi hati</li>
+                                <li><i class="fas fa-check"></i> Tes fungsi ginjal</li>
+                                <li><i class="fas fa-check"></i> Laporan kesehatan lengkap</li>
+                            </ul>
+                            <button class="btn btn-primary package-btn" onclick="buatJanji()">Pilih Paket</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Butuh Layanan Kesehatan Segera?</h2>
+                    <p>Tim medis profesional kami siap melayani Anda dengan fasilitas terlengkap</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" onclick="buatJanji()">Buat Janji Sekarang</a>
+                        <a href="kontak.html" class="btn btn-secondary">Hubungi Kami</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>(0296) 123-4567</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>info@mmcblora.com</span>
+            </div>
+        </div>
+        <button class="cta-btn" onclick="buatJanji()">
+            <i class="fas fa-calendar-plus"></i>
+            Buat Janji
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Klinik MMC Blora</h3>
+                    <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="layanan.html">Konsultasi Umum</a></li>
+                        <li><a href="mmc-skincare.html">MMC Skincare</a></li>
+                        <li><a href="layanan.html">Laboratorium</a></li>
+                        <li><a href="layanan.html">Radiologi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+                        <p><i class="fas fa-phone"></i> (0296) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@mmcblora.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Jam Operasional</h4>
+                    <div class="hours">
+                        <p>Senin - Jumat: 08:00 - 21:00</p>
+                        <p>Sabtu: 08:00 - 17:00</p>
+                        <p>Minggu: 09:00 - 15:00</p>
+                        <p class="emergency">IGD: 24 Jam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
