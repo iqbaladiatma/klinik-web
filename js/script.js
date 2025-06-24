@@ -174,10 +174,10 @@ function createFAB() {
     return fab;
 }
 
-// Buat Janji Temu function
-function buatJanji() {
-    const phoneNumber = '6296123456789'; // Format internasional tanpa +
-    const message = encodeURIComponent('Halo, saya ingin membuat janji temu di Klinik MMC Blora. Mohon informasi jadwal yang tersedia.');
+// Konsultasi WhatsApp function
+function konsultasi() {
+    const phoneNumber = '6281234567890'; // Format internasional tanpa +
+    const message = encodeURIComponent('Halo, saya ingin konsultasi dengan dokter di Klinik MMC Blora. Mohon informasi lebih lanjut tentang layanan yang tersedia.');
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     
     // Try to open WhatsApp, fallback to showing contact info

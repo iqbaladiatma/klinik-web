@@ -97,10 +97,10 @@
         updateCounter();
     }
 
-    // WhatsApp integration
-    window.buatJanji = function() {
-        const phoneNumber = '6296123456789';
-        const message = encodeURIComponent('Halo, saya ingin membuat janji temu di Klinik MMC Blora. Mohon informasi jadwal yang tersedia.');
+    // WhatsApp consultation
+    window.konsultasi = function() {
+        const phoneNumber = '6281234567890';
+        const message = encodeURIComponent('Halo, saya ingin konsultasi dengan dokter di Klinik MMC Blora. Mohon informasi lebih lanjut tentang layanan yang tersedia.');
         const whatsappURL = 'https://wa.me/' + phoneNumber + '?text=' + message;
         
         try {

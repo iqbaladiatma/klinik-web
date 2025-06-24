@@ -456,6 +456,17 @@ body {
     transform: scale(1.05);
 }
 
+/* Consultation WhatsApp styling */
+.btn-whatsapp {
+    background: #25D366;
+    border-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background: #128C7E;
+    border-color: #128C7E;
+}
+
 /* Footer */
 .footer {
     background: var(--text-dark);

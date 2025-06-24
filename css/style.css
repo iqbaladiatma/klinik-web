@@ -860,6 +860,28 @@ html {
     }
 }
 
+/* Consultation specific styles */
+.btn-consultation {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: var(--white);
+    border-color: #25D366;
+}
+
+.btn-consultation:hover {
+    background: linear-gradient(135deg, #128C7E, #075E54);
+    border-color: #128C7E;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+    color: #25D366;
+}
+
+.consultation-float {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
 /* Footer */
 .footer {
     background: var(--text-dark);
