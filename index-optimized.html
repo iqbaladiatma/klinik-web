@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klinik MMC Blora - Layanan Kesehatan Terpercaya</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Klinik MMC Blora menyediakan layanan kesehatan terpercaya dengan teknologi modern dan tim medis berpengalaman. Hubungi kami untuk konsultasi.">
+    <meta name="keywords" content="klinik, kesehatan, blora, dokter, medical center, mmc skincare">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style-optimized.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <link rel="stylesheet" href="css/style-optimized.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6A0DAD">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="MMC Blora">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
 </head>
 <body>
     <!-- Header -->
@@ -16,7 +33,7 @@
                     <h2>MMC Blora</h2>
                 </div>
                 <div class="nav-menu" id="nav-menu">
-                    <a href="index.html" class="nav-link active">Beranda</a>
+                    <a href="index-optimized.html" class="nav-link active">Beranda</a>
                     <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
                     <a href="layanan.html" class="nav-link">Layanan</a>
                     <a href="tim-dokter.html" class="nav-link">Tim Dokter</a>
@@ -49,7 +66,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1551601651-2310e8fb4e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Klinik MMC Blora">
+            <img src="https://images.unsplash.com/photo-1551601651-2310e8fb4e6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Klinik MMC Blora" loading="eager">
         </div>
     </section>
 
@@ -94,28 +111,28 @@
     <section class="stats-section">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item fade-in">
+                <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <div class="counter" data-target="5000">0</div>
                     <div class="counter-label">Pasien Puas</div>
                 </div>
-                <div class="stat-item fade-in">
+                <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
                     <div class="counter" data-target="15">0</div>
                     <div class="counter-label">Dokter Ahli</div>
                 </div>
-                <div class="stat-item fade-in">
+                <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fas fa-hospital"></i>
                     </div>
                     <div class="counter" data-target="8">0</div>
                     <div class="counter-label">Tahun Melayani</div>
                 </div>
-                <div class="stat-item fade-in">
+                <div class="stat-item">
                     <div class="stat-icon">
                         <i class="fas fa-award"></i>
                     </div>
@@ -130,97 +147,35 @@
     <section class="why-choose-us">
         <div class="container">
             <div class="why-content">
-                <div class="why-text fade-in-left">
+                <div class="why-text">
                     <h2>Mengapa Memilih Klinik MMC Blora?</h2>
                     <div class="why-points">
-                        <div class="why-point scale-in">
+                        <div class="why-point">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Tim Medis Profesional</h4>
                                 <p>Dokter dan tenaga medis berpengalaman dan bersertifikat</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="95"></div>
-                                </div>
                             </div>
                         </div>
-                        <div class="why-point scale-in">
+                        <div class="why-point">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Peralatan Modern</h4>
                                 <p>Teknologi medis terkini untuk diagnosis yang akurat</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="90"></div>
-                                </div>
                             </div>
                         </div>
-                        <div class="why-point scale-in">
+                        <div class="why-point">
                             <i class="fas fa-check-circle"></i>
                             <div>
                                 <h4>Pelayanan 24/7</h4>
                                 <p>Siap melayani kebutuhan kesehatan Anda kapan saja</p>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="100"></div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="why-image fade-in-right">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Fasilitas Klinik" class="mouse-parallax" data-speed="2">
+                <div class="why-image">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fasilitas Klinik" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section">
-        <div class="container">
-            <h2 class="fade-in">Apa Kata Pasien Kami</h2>
-            <div class="testimonial-slider fade-in">
-                <div class="testimonial-slide active">
-                    <div class="testimonial-content">
-                        <p>"Pelayanan di Klinik MMC Blora sangat memuaskan. Dokternya ramah dan profesional. Fasilitas juga sangat lengkap dan modern."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b5b51e4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Sarah M.">
-                        <div class="author-info">
-                            <h4>Sarah Melati</h4>
-                            <p>Pasien Reguler</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <p>"Tim medis yang sangat kompeten dan peralatan yang canggih. Saya merasa sangat terbantu dengan layanan yang diberikan."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Budi S.">
-                        <div class="author-info">
-                            <h4>Budi Santoso</h4>
-                            <p>Pasien Korporat</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <p>"Proses administrasi yang mudah, tidak antri lama, dan hasil pemeriksaan yang akurat. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Rina P.">
-                        <div class="author-info">
-                            <h4>Rina Pratiwi</h4>
-                            <p>Ibu Rumah Tangga</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="testimonial-nav">
-                <div class="testimonial-dot active"></div>
-                <div class="testimonial-dot"></div>
-                <div class="testimonial-dot"></div>
             </div>
         </div>
     </section>
@@ -251,9 +206,9 @@
                     <h3>Klinik MMC Blora</h3>
                     <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -289,6 +244,16 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Load JavaScript asynchronously -->
+    <script src="js/script-optimized.js" defer></script>
+    
+    <!-- PWA Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(registration => console.log('SW registered'))
+                .catch(error => console.log('SW registration failed'));
+        }
+    </script>
 </body>
 </html>

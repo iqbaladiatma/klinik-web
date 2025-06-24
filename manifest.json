@@ -1,0 +1,25 @@
+{
+  "name": "Klinik MMC Blora",
+  "short_name": "MMC Blora",
+  "description": "Layanan kesehatan terpercaya dengan teknologi modern dan tim medis berpengalaman",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6A0DAD",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%236A0DAD'/><text x='96' y='120' font-size='100' text-anchor='middle' fill='white'>🏥</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%236A0DAD'/><text x='256' y='320' font-size='300' text-anchor='middle' fill='white'>🏥</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["medical", "health", "lifestyle"],
+  "lang": "id",
+  "dir": "ltr"
+}
