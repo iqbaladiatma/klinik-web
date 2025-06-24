@@ -1,473 +1,472 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMC Skincare - Klinik MMC Blora</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>MMC Blora</h2>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="index.html" class="nav-link">Beranda</a>
-                    <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
-                    <a href="layanan.html" class="nav-link">Layanan</a>
-                    <a href="tim-dokter.html" class="nav-link">Tim Dokter</a>
-                    <div class="dropdown">
-                        <a href="mmc-skincare.html" class="nav-link dropdown-btn active">MMC Skincare <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#produk">Produk</a>
-                            <a href="#perawatan">Perawatan</a>
-                        </div>
-                    </div>
-                    <a href="kontak.html" class="nav-link">Kontak</a>
-                </div>
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img src="img/logo.png" alt="Logo Klinik MMC Blora" />
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="tentang-kami.html" class="nav-link">Tentang Kami</a>
+            <a href="layanan.html" class="nav-link">Layanan</a>
+            <a href="tim-dokter.html" class="nav-link">Tim Dokter</a>
+            <div class="dropdown">
+              <a href="mmc-skincare.html" class="nav-link dropdown-btn active">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#produk">Produk</a>
+                <a href="#perawatan">Perawatan</a>
+              </div>
             </div>
-        </nav>
+            <a href="kontak.html" class="nav-link">Kontak</a>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="skincare-hero">
-        <div class="container">
-            <div class="skincare-hero-content">
-                <div class="hero-text">
-                    <h1>MMC Skincare</h1>
-                    <p>Wujudkan kulit sehat dan cantik alami dengan teknologi terdepan dan produk berkualitas tinggi dari MMC Skincare</p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
-                        <a href="#perawatan" class="btn btn-secondary">Lihat Perawatan</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="MMC Skincare">
-                </div>
+      <div class="container">
+        <div class="skincare-hero-content">
+          <div class="hero-text">
+            <h1>MMC Skincare</h1>
+            <p>Wujudkan kulit sehat dan cantik alami dengan teknologi terdepan dan produk berkualitas tinggi dari MMC Skincare</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
+              <a href="#perawatan" class="btn btn-secondary">Lihat Perawatan</a>
             </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="MMC Skincare" />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Features -->
     <section class="skincare-features">
-        <div class="container">
-            <h2>Mengapa Memilih MMC Skincare?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Teknologi Terdepan</h3>
-                    <p>Menggunakan teknologi laser, RF, dan peralatan kecantikan modern lainnya</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Dokter Berpengalaman</h3>
-                    <p>Tim dokter spesialis kulit yang berpengalaman dan bersertifikat</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Produk Berkualitas</h3>
-                    <p>Menggunakan produk skincare premium yang aman dan teruji klinis</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Aman & Steril</h3>
-                    <p>Prosedur yang aman dengan standar kebersihan dan sterilisasi tinggi</p>
-                </div>
+      <div class="container">
+        <h2>Mengapa Memilih MMC Skincare?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-microscope"></i>
             </div>
+            <h3>Teknologi Terdepan</h3>
+            <p>Menggunakan teknologi laser, RF, dan peralatan kecantikan modern lainnya</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h3>Dokter Berpengalaman</h3>
+            <p>Tim dokter spesialis kulit yang berpengalaman dan bersertifikat</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Produk Berkualitas</h3>
+            <p>Menggunakan produk skincare premium yang aman dan teruji klinis</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Aman & Steril</h3>
+            <p>Prosedur yang aman dengan standar kebersihan dan sterilisasi tinggi</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Perawatan Section -->
     <section id="perawatan" class="section">
-        <div class="container">
-            <h2>Perawatan Unggulan</h2>
-            <div class="treatments-grid">
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Facial Treatment">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Facial Treatment</h3>
-                        <p>Perawatan wajah komprehensif untuk membersihkan, menutrisi, dan meremajakan kulit wajah</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Deep Cleansing</li>
-                            <li><i class="fas fa-check"></i> Eksfoliasi Lembut</li>
-                            <li><i class="fas fa-check"></i> Hidrasi Optimal</li>
-                            <li><i class="fas fa-check"></i> Anti-Aging</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 150.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Laser Treatment">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Laser Treatment</h3>
-                        <p>Teknologi laser untuk mengatasi berbagai masalah kulit seperti flek hitam, kerutan, dan bekas jerawat</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Menghilangkan Flek Hitam</li>
-                            <li><i class="fas fa-check"></i> Mengurangi Kerutan</li>
-                            <li><i class="fas fa-check"></i> Menyamarkan Bekas Jerawat</li>
-                            <li><i class="fas fa-check"></i> Mengencangkan Kulit</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 500.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Chemical Peeling">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Chemical Peeling</h3>
-                        <p>Perawatan eksfoliasi kimia untuk memperbaiki tekstur kulit dan mengatasi hiperpigmentasi</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Mencerahkan Kulit</li>
-                            <li><i class="fas fa-check"></i> Menghaluskan Tekstur</li>
-                            <li><i class="fas fa-check"></i> Mengurangi Pori-pori</li>
-                            <li><i class="fas fa-check"></i> Anti-Acne</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 300.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Microneedling">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Microneedling</h3>
-                        <p>Stimulasi kolagen alami untuk memperbaiki tekstur kulit dan mengurangi tanda penuaan</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Stimulasi Kolagen</li>
-                            <li><i class="fas fa-check"></i> Memperbaiki Bekas Luka</li>
-                            <li><i class="fas fa-check"></i> Mengencangkan Kulit</li>
-                            <li><i class="fas fa-check"></i> Mengurangi Stretch Mark</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 400.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Botox Treatment">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Botox & Filler</h3>
-                        <p>Perawatan injeksi untuk mengurangi kerutan dan menambah volume wajah secara alami</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Mengurangi Kerutan</li>
-                            <li><i class="fas fa-check"></i> Menambah Volume</li>
-                            <li><i class="fas fa-check"></i> Hasil Natural</li>
-                            <li><i class="fas fa-check"></i> Minimal Downtime</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 2.500.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="treatment-card">
-                    <div class="treatment-image">
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Body Treatment">
-                    </div>
-                    <div class="treatment-content">
-                        <h3>Body Treatment</h3>
-                        <p>Perawatan tubuh komprehensif untuk menghaluskan dan mencerahkan kulit seluruh tubuh</p>
-                        <ul class="treatment-benefits">
-                            <li><i class="fas fa-check"></i> Body Whitening</li>
-                            <li><i class="fas fa-check"></i> Slimming Treatment</li>
-                            <li><i class="fas fa-check"></i> Cellulite Reduction</li>
-                            <li><i class="fas fa-check"></i> Skin Tightening</li>
-                        </ul>
-                        <div class="treatment-price">
-                            <span class="price">Mulai dari Rp 350.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Perawatan Unggulan</h2>
+        <div class="treatments-grid">
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Facial Treatment" />
             </div>
+            <div class="treatment-content">
+              <h3>Facial Treatment</h3>
+              <p>Perawatan wajah komprehensif untuk membersihkan, menutrisi, dan meremajakan kulit wajah</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Deep Cleansing</li>
+                <li><i class="fas fa-check"></i> Eksfoliasi Lembut</li>
+                <li><i class="fas fa-check"></i> Hidrasi Optimal</li>
+                <li><i class="fas fa-check"></i> Anti-Aging</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 150.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Laser Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h3>Laser Treatment</h3>
+              <p>Teknologi laser untuk mengatasi berbagai masalah kulit seperti flek hitam, kerutan, dan bekas jerawat</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Menghilangkan Flek Hitam</li>
+                <li><i class="fas fa-check"></i> Mengurangi Kerutan</li>
+                <li><i class="fas fa-check"></i> Menyamarkan Bekas Jerawat</li>
+                <li><i class="fas fa-check"></i> Mengencangkan Kulit</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 500.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Chemical Peeling" />
+            </div>
+            <div class="treatment-content">
+              <h3>Chemical Peeling</h3>
+              <p>Perawatan eksfoliasi kimia untuk memperbaiki tekstur kulit dan mengatasi hiperpigmentasi</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Mencerahkan Kulit</li>
+                <li><i class="fas fa-check"></i> Menghaluskan Tekstur</li>
+                <li><i class="fas fa-check"></i> Mengurangi Pori-pori</li>
+                <li><i class="fas fa-check"></i> Anti-Acne</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 300.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Microneedling" />
+            </div>
+            <div class="treatment-content">
+              <h3>Microneedling</h3>
+              <p>Stimulasi kolagen alami untuk memperbaiki tekstur kulit dan mengurangi tanda penuaan</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Stimulasi Kolagen</li>
+                <li><i class="fas fa-check"></i> Memperbaiki Bekas Luka</li>
+                <li><i class="fas fa-check"></i> Mengencangkan Kulit</li>
+                <li><i class="fas fa-check"></i> Mengurangi Stretch Mark</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 400.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Botox Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h3>Botox & Filler</h3>
+              <p>Perawatan injeksi untuk mengurangi kerutan dan menambah volume wajah secara alami</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Mengurangi Kerutan</li>
+                <li><i class="fas fa-check"></i> Menambah Volume</li>
+                <li><i class="fas fa-check"></i> Hasil Natural</li>
+                <li><i class="fas fa-check"></i> Minimal Downtime</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 2.500.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="treatment-image">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Body Treatment" />
+            </div>
+            <div class="treatment-content">
+              <h3>Body Treatment</h3>
+              <p>Perawatan tubuh komprehensif untuk menghaluskan dan mencerahkan kulit seluruh tubuh</p>
+              <ul class="treatment-benefits">
+                <li><i class="fas fa-check"></i> Body Whitening</li>
+                <li><i class="fas fa-check"></i> Slimming Treatment</li>
+                <li><i class="fas fa-check"></i> Cellulite Reduction</li>
+                <li><i class="fas fa-check"></i> Skin Tightening</li>
+              </ul>
+              <div class="treatment-price">
+                <span class="price">Mulai dari Rp 350.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Produk Section -->
     <section id="produk" class="section products-section">
-        <div class="container">
-            <h2>Produk Skincare Unggulan</h2>
-            <p class="section-subtitle">Produk skincare premium yang diformulasikan khusus untuk berbagai jenis kulit</p>
-            
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Serum Vitamin C">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Vitamin C Serum</h3>
-                        <p>Serum pencerah dengan kandungan Vitamin C 20% untuk kulit lebih cerah dan sehat</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Anti-Aging</span>
-                            <span class="feature-tag">Brightening</span>
-                            <span class="feature-tag">Antioxidant</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 285.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Produk Skincare Unggulan</h2>
+        <p class="section-subtitle">Produk skincare premium yang diformulasikan khusus untuk berbagai jenis kulit</p>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Moisturizer">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Hydrating Moisturizer</h3>
-                        <p>Pelembab intensif dengan Hyaluronic Acid untuk hidrasi optimal sepanjang hari</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Hydrating</span>
-                            <span class="feature-tag">Long-lasting</span>
-                            <span class="feature-tag">All Skin Types</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 195.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sunscreen">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Sunscreen SPF 50+</h3>
-                        <p>Tabir surya dengan proteksi maksimal dan tekstur ringan, tidak meninggalkan white cast</p>
-                        <div class="product-features">
-                            <span class="feature-tag">SPF 50+</span>
-                            <span class="feature-tag">PA+++</span>
-                            <span class="feature-tag">Non-greasy</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 165.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cleanser">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Gentle Cleanser</h3>
-                        <p>Pembersih wajah lembut yang efektif mengangkat kotoran tanpa membuat kulit kering</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Gentle</span>
-                            <span class="feature-tag">Deep Clean</span>
-                            <span class="feature-tag">pH Balanced</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 145.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Retinol Serum">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Retinol Serum</h3>
-                        <p>Serum anti-aging dengan Retinol untuk mengurangi kerutan dan memperbaiki tekstur kulit</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Anti-Aging</span>
-                            <span class="feature-tag">Retinol 0.5%</span>
-                            <span class="feature-tag">Night Use</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 325.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1570194071044-790ad5ad8e46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Acne Treatment">
-                    </div>
-                    <div class="product-content">
-                        <h3>MMC Acne Treatment</h3>
-                        <p>Treatment khusus untuk kulit berjerawat dengan Salicylic Acid dan Niacinamide</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Anti-Acne</span>
-                            <span class="feature-tag">Oil Control</span>
-                            <span class="feature-tag">Pore Minimizer</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">Rp 225.000</span>
-                        </div>
-                        <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
-                    </div>
-                </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Serum Vitamin C" />
             </div>
+            <div class="product-content">
+              <h3>MMC Vitamin C Serum</h3>
+              <p>Serum pencerah dengan kandungan Vitamin C 20% untuk kulit lebih cerah dan sehat</p>
+              <div class="product-features">
+                <span class="feature-tag">Anti-Aging</span>
+                <span class="feature-tag">Brightening</span>
+                <span class="feature-tag">Antioxidant</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 285.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Moisturizer" />
+            </div>
+            <div class="product-content">
+              <h3>MMC Hydrating Moisturizer</h3>
+              <p>Pelembab intensif dengan Hyaluronic Acid untuk hidrasi optimal sepanjang hari</p>
+              <div class="product-features">
+                <span class="feature-tag">Hydrating</span>
+                <span class="feature-tag">Long-lasting</span>
+                <span class="feature-tag">All Skin Types</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 195.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Sunscreen" />
+            </div>
+            <div class="product-content">
+              <h3>MMC Sunscreen SPF 50+</h3>
+              <p>Tabir surya dengan proteksi maksimal dan tekstur ringan, tidak meninggalkan white cast</p>
+              <div class="product-features">
+                <span class="feature-tag">SPF 50+</span>
+                <span class="feature-tag">PA+++</span>
+                <span class="feature-tag">Non-greasy</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 165.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cleanser" />
+            </div>
+            <div class="product-content">
+              <h3>MMC Gentle Cleanser</h3>
+              <p>Pembersih wajah lembut yang efektif mengangkat kotoran tanpa membuat kulit kering</p>
+              <div class="product-features">
+                <span class="feature-tag">Gentle</span>
+                <span class="feature-tag">Deep Clean</span>
+                <span class="feature-tag">pH Balanced</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 145.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Retinol Serum" />
+            </div>
+            <div class="product-content">
+              <h3>MMC Retinol Serum</h3>
+              <p>Serum anti-aging dengan Retinol untuk mengurangi kerutan dan memperbaiki tekstur kulit</p>
+              <div class="product-features">
+                <span class="feature-tag">Anti-Aging</span>
+                <span class="feature-tag">Retinol 0.5%</span>
+                <span class="feature-tag">Night Use</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 325.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1570194071044-790ad5ad8e46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Acne Treatment" />
+            </div>
+            <div class="product-content">
+              <h3>MMC Acne Treatment</h3>
+              <p>Treatment khusus untuk kulit berjerawat dengan Salicylic Acid dan Niacinamide</p>
+              <div class="product-features">
+                <span class="feature-tag">Anti-Acne</span>
+                <span class="feature-tag">Oil Control</span>
+                <span class="feature-tag">Pore Minimizer</span>
+              </div>
+              <div class="product-price">
+                <span class="price">Rp 225.000</span>
+              </div>
+              <button class="btn btn-primary" onclick="konsultasi()">Konsultasi</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimoni -->
     <section class="testimonials-section">
-        <div class="container">
-            <h2>Testimoni Pelanggan</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Perawatan di MMC Skincare benar-benar mengubah kulit saya. Setelah laser treatment, flek hitam saya hilang dan kulit jadi lebih cerah!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b5b51e4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Sarah M.">
-                        <div class="author-info">
-                            <h4>Sarah M.</h4>
-                            <p>Pelanggan MMC Skincare</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Produk skincare MMC cocok banget untuk kulit saya yang sensitif. Dokternya juga sangat profesional dan ramah dalam memberikan konsultasi."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Lisa A.">
-                        <div class="author-info">
-                            <h4>Lisa A.</h4>
-                            <p>Pelanggan MMC Skincare</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Chemical peeling di MMC skincare hasil nya amazing! Kulit saya jadi lebih halus dan bekas jerawat semakin samar. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Maya R.">
-                        <div class="author-info">
-                            <h4>Maya R.</h4>
-                            <p>Pelanggan MMC Skincare</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Perawatan di MMC Skincare benar-benar mengubah kulit saya. Setelah laser treatment, flek hitam saya hilang dan kulit jadi lebih cerah!"</p>
             </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616b5b51e4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Sarah M." />
+              <div class="author-info">
+                <h4>Sarah M.</h4>
+                <p>Pelanggan MMC Skincare</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Produk skincare MMC cocok banget untuk kulit saya yang sensitif. Dokternya juga sangat profesional dan ramah dalam memberikan konsultasi."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Lisa A." />
+              <div class="author-info">
+                <h4>Lisa A.</h4>
+                <p>Pelanggan MMC Skincare</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Chemical peeling di MMC skincare hasil nya amazing! Kulit saya jadi lebih halus dan bekas jerawat semakin samar. Highly recommended!"</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Maya R." />
+              <div class="author-info">
+                <h4>Maya R.</h4>
+                <p>Pelanggan MMC Skincare</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="cta-content">
-            <h2>Siap Memiliki Kulit Sehat dan Cantik?</h2>
-            <p>Konsultasikan kebutuhan skincare Anda dengan dokter spesialis kami</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
-                <a href="kontak.html" class="btn btn-secondary">Hubungi Kami</a>
-            </div>
+      <div class="cta-content">
+        <h2>Siap Memiliki Kulit Sehat dan Cantik?</h2>
+        <p>Konsultasikan kebutuhan skincare Anda dengan dokter spesialis kami</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
+          <a href="kontak.html" class="btn btn-secondary">Hubungi Kami</a>
         </div>
+      </div>
     </section>
 
     <!-- Contact Info Float -->
     <div class="contact-float">
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>(0296) 123-4567</span>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>skincare@mmcblora.com</span>
-            </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>(0296) 123-4567</span>
         </div>
-        <button class="cta-btn" onclick="konsultasi()">
-            <i class="fas fa-comments"></i> Konsultasi
-        </button>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>skincare@mmcblora.com</span>
+        </div>
+      </div>
+      <button class="cta-btn" onclick="konsultasi()"><i class="fas fa-comments"></i> Konsultasi</button>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Klinik MMC Blora</h3>
-                    <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Layanan</h4>
-                    <ul>
-                        <li><a href="layanan.html">Konsultasi Umum</a></li>
-                        <li><a href="mmc-skincare.html">MMC Skincare</a></li>
-                        <li><a href="layanan.html">Laboratorium</a></li>
-                        <li><a href="layanan.html">Radiologi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Kontak</h4>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
-                        <p><i class="fas fa-phone"></i> (0296) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> skincare@mmcblora.com</p>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Jam Operasional</h4>
-                    <div class="hours">
-                        <p>Senin - Jumat: 09:00 - 20:00</p>
-                        <p>Sabtu: 09:00 - 17:00</p>
-                        <p>Minggu: 10:00 - 15:00</p>
-                        <p class="emergency">Konsultasi: By Appointment</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Klinik MMC Blora</h3>
+            <p>Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Layanan</h4>
+            <ul>
+              <li><a href="layanan.html">Konsultasi Umum</a></li>
+              <li><a href="mmc-skincare.html">MMC Skincare</a></li>
+              <li><a href="layanan.html">Laboratorium</a></li>
+              <li><a href="layanan.html">Radiologi</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Kontak</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+              <p><i class="fas fa-phone"></i> (0296) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> skincare@mmcblora.com</p>
             </div>
+          </div>
+          <div class="footer-section">
+            <h4>Jam Operasional</h4>
+            <div class="hours">
+              <p>Senin - Jumat: 09:00 - 20:00</p>
+              <p>Sabtu: 09:00 - 17:00</p>
+              <p>Minggu: 10:00 - 15:00</p>
+              <p class="emergency">Konsultasi: By Appointment</p>
+            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
