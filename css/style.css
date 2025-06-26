@@ -1002,61 +1002,135 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: var(--white);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: var(--shadow);
-    padding: 2rem 0;
+  .header {
+    padding: 0.5rem 0; /* Reduced padding for a compact header */
   }
 
-  .nav-menu.active {
-    left: 0;
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .nav-container {
+    padding: 0 15px;
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .nav-logo img {
+    height: 50px; /* Slightly larger than 480px for better visibility */
+    max-width: 160px;
+    width: auto;
   }
 
   .nav-toggle {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -80vw; /* Slide in from the right */
+    width: 80vw;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: right 0.3s ease;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu a {
+    font-size: 1.25rem; /* Larger for touch */
+    padding: 1rem;
+    color: #333;
+    transition: color 0.2s ease;
+  }
+
+  .nav-menu a:hover {
+    color: var(--primary-color, #6a0dad); /* Use a custom primary color if defined */
   }
 
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 120px 20px 60px;
+    padding: 100px 15px 40px;
   }
 
   .hero-content {
-    margin-right: 0;
-    margin-bottom: 2rem;
+    margin: 0 auto 1.5rem;
+    max-width: 90%;
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
   }
 
   .hero-buttons {
     justify-content: center;
+    gap: 1rem;
   }
 
   .why-content {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .contact-float {
     position: relative;
-    bottom: auto;
-    right: auto;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     width: fit-content;
+    padding: 0.75rem;
   }
 
   .contact-info {
@@ -1065,28 +1139,65 @@ html {
 }
 
 @media (max-width: 480px) {
+  .header,
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-container {
+    padding: 0 10px;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .nav-logo img {
+    height: 36px;
+    max-width: 120px;
+  }
+
+  .nav-menu {
+    width: 85vw;
+    max-width: 300px;
+    padding: 1.5rem 0.75rem;
+    border-radius: 16px 0 0 16px;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+
+  .hero {
+    padding: 80px 10px 30px;
+  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
-  .btn {
-    padding: 10px 20px;
+  .btn,
+  .cta-btn {
+    padding: 8px 16px;
     font-size: 0.9rem;
   }
 
   .services-preview h2,
-  .why-text h2 {
-    font-size: 2rem;
+  .why-text h2,
+  .testimonials-section h2,
+  .products-section h2 {
+    font-size: 1.5rem;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.5rem;
   }
+
   .stats-grid,
   .content-grid,
   .doctors-grid,
@@ -1098,9 +1209,10 @@ html {
   .facilities-grid,
   .quick-actions-grid,
   .contact-main-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .service-card,
   .stat-item,
   .doctor-card,
@@ -1113,11 +1225,12 @@ html {
   .quick-action-card,
   .support-card,
   .package-card {
-    padding: 1rem !important;
+    padding: 1rem;
     width: 100%;
     max-width: 100%;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem;
   }
+
   .hero,
   .services-preview,
   .why-choose-us,
@@ -1125,29 +1238,9 @@ html {
   .testimonials-section,
   .products-section,
   .skincare-features {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
   }
-  .hero h1,
-  .skincare-hero h1,
-  .services-preview h2,
-  .why-text h2,
-  .testimonials-section h2,
-  .products-section h2 {
-    font-size: 1.5rem;
-  }
-  .hero p,
-  .skincare-hero p,
-  .section p,
-  .product-content p,
-  .testimonial-content p {
-    font-size: 1rem;
-  }
-  .btn,
-  .cta-btn {
-    padding: 10px 16px;
-    font-size: 0.95rem;
-  }
+
   img,
   .hero-image img,
   .why-image img,
@@ -1155,55 +1248,36 @@ html {
   .product-image img,
   .treatment-image img,
   .testimonial-author img {
-    width: 100% !important;
-    height: auto !important;
-    max-width: 100% !important;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
+
   .page-header {
-    padding: 60px 0 30px;
+    padding: 60px 10px 20px;
   }
+
   .page-header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
+
   .page-header p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-  .nav-logo img {
-    height: 40px;
-    max-width: 120px;
-  }
+
   .contact-float {
-    right: 10px;
-    left: 10px;
-    width: auto;
-    min-width: 0;
-    max-width: 100vw;
     padding: 0.5rem;
+    width: auto;
+    max-width: calc(100vw - 20px);
   }
+
   .container {
-    max-width: 100vw !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+    max-width: 100vw;
+    padding: 0 8px;
   }
+
   body {
-    overflow-x: hidden !important;
-  }
-  .nav-logo img {
-    height: 36px !important;
-    max-width: 100px !important;
-  }
-  .header,
-  .navbar {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-  }
-  .nav-container {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-  }
-  .hero,
-  .page-header {
-    padding-top: 80px !important;
+    overflow-x: hidden;
   }
 }
 
