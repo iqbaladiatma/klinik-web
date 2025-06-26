@@ -552,7 +552,6 @@ html {
   transform: scale(1.02) rotate(1deg);
 }
 
-
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -1087,6 +1086,124 @@ html {
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .stats-grid,
+  .content-grid,
+  .doctors-grid,
+  .products-grid,
+  .testimonials-grid,
+  .features-grid,
+  .treatments-grid,
+  .awards-grid,
+  .facilities-grid,
+  .quick-actions-grid,
+  .contact-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  .service-card,
+  .stat-item,
+  .doctor-card,
+  .product-card,
+  .testimonial-card,
+  .feature-card,
+  .treatment-card,
+  .award-card,
+  .facility-card,
+  .quick-action-card,
+  .support-card,
+  .package-card {
+    padding: 1rem !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1rem auto;
+  }
+  .hero,
+  .services-preview,
+  .why-choose-us,
+  .stats-section,
+  .testimonials-section,
+  .products-section,
+  .skincare-features {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero h1,
+  .skincare-hero h1,
+  .services-preview h2,
+  .why-text h2,
+  .testimonials-section h2,
+  .products-section h2 {
+    font-size: 1.5rem;
+  }
+  .hero p,
+  .skincare-hero p,
+  .section p,
+  .product-content p,
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+  .btn,
+  .cta-btn {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+  img,
+  .hero-image img,
+  .why-image img,
+  .facility-card img,
+  .product-image img,
+  .treatment-image img,
+  .testimonial-author img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  .page-header {
+    padding: 60px 0 30px;
+  }
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  .page-header p {
+    font-size: 1rem;
+  }
+  .nav-logo img {
+    height: 40px;
+    max-width: 120px;
+  }
+  .contact-float {
+    right: 10px;
+    left: 10px;
+    width: auto;
+    min-width: 0;
+    max-width: 100vw;
+    padding: 0.5rem;
+  }
+  .container {
+    max-width: 100vw !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  .nav-logo img {
+    height: 36px !important;
+    max-width: 100px !important;
+  }
+  .header,
+  .navbar {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+  .nav-container {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .hero,
+  .page-header {
+    padding-top: 80px !important;
   }
 }
 
@@ -2976,4 +3093,62 @@ html {
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Animasi Utility Global */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: scaleIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility: animasi delay */
+[data-anim-delay] {
+  animation-delay: var(--anim-delay, 0s);
 }
