@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan - Klinik MMC Blora</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur z-[1000] shadow transition-all duration-300 ease-in-out translate-y-0">
+      <nav class="py-4">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-5">
+          <div class="flex items-center h-[60px] pl-2">
+            <img src="img/logo.png" alt="Logo Klinik MMC Blora" class="h-[150px] max-w-none md:h-[60px] md:max-w-[160px]" />
+          </div>
+          <div class="flex items-center gap-8" id="nav-menu">
+            <a href="index.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Beranda</a>
+            <a href="tentang-kami.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Tentang Kami</a>
+            <a href="layanan.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link active">Layanan</a>
+            <a href="tim-dokter.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Tim Dokter</a>
+            <div class="relative group">
+              <a href="mmc-skincare.html" class="flex items-center gap-2 nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+              <div class="absolute top-full left-0 bg-white min-w-[160px] shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-50">
+                <a href="mmc-skincare.html#produk" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Produk</a>
+                <a href="mmc-skincare.html#perawatan" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Perawatan</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Kontak</a>
+          </div>
+          <div class="flex flex-col cursor-pointer md:hidden" id="nav-toggle">
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-purple-50 to-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-purple-900 mb-2">Layanan Kami</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">Layanan kesehatan lengkap dan terpadu untuk memenuhi kebutuhan Anda dan keluarga</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-8">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Layanan Utama -->
+        <section class="mb-16">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Layanan Utama</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-stethoscope"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Konsultasi Umum</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pemeriksaan kesehatan umum dengan dokter berpengalaman.</p>
+              <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Konsultasi</button>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-microscope"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Laboratorium</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pemeriksaan laboratorium lengkap dengan peralatan modern dan hasil yang akurat untuk mendukung diagnosis yang tepat.</p>
+              <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Konsultasi</button>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-x-ray"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Radiologi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pemeriksaan radiologi dengan teknologi terkini untuk mendapatkan gambaran yang jelas dari kondisi internal tubuh.</p>
+              <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Konsultasi</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Layanan Spesialis -->
+        <section class="section">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Layanan Spesialis</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-heart"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Kardiologi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pemeriksaan dan pengobatan penyakit jantung dan pembuluh darah</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Senin, Rabu, Jumat</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 14:00 - 17:00</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-child"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Pediatri</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Layanan kesehatan khusus untuk bayi, anak, dan remaja</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Setiap hari</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 08:00 - 21:00</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-female"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Obstetri & Ginekologi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Layanan kesehatan reproduksi wanita dan kehamilan</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Selasa, Kamis, Sabtu</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 13:00 - 16:00</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-bone"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Ortopedi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pengobatan cedera dan gangguan sistem muskuloskeletal</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Senin, Kamis</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 15:00 - 18:00</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-eye"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Oftalmologi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Pemeriksaan dan pengobatan gangguan mata</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Rabu, Sabtu</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 09:00 - 12:00</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-spa"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">MMC Skincare</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Perawatan kulit dan kecantikan dengan teknologi terdepan</p>
+              <div class="bg-purple-50 dark:bg-purple-800 rounded-lg p-3 mt-2">
+                <p class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Jadwal: Setiap hari</p>
+                <p class="text-gray-700 dark:text-gray-300">Waktu: 09:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Layanan Darurat -->
+        <section class="section">
+          <h2>Layanan Darurat</h2>
+          <div class="emergency-services">
+            <div class="emergency-card">
+              <div class="emergency-icon">
+                <i class="fas fa-ambulance"></i>
+              </div>
+              <div class="emergency-content">
+                <h3>IGD 24 Jam</h3>
+                <p>Layanan gawat darurat 24 jam dengan tim medis siaga dan peralatan lengkap untuk menangani kondisi darurat.</p>
+                <div class="emergency-contact">
+                  <p><strong>Hotline IGD:</strong> <a href="tel:+62296123456">(0296) 123-456</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="emergency-card">
+              <div class="emergency-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="emergency-content">
+                <h3>Konsultasi Telepon</h3>
+                <p>Layanan konsultasi medis melalui telepon untuk kondisi non-darurat dan pertanyaan kesehatan umum.</p>
+                <div class="emergency-contact">
+                  <p><strong>Telepon:</strong> <a href="tel:+62296123457">(0296) 123-457</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Galeri Berita & Kegiatan Klinik -->
+        <section class="section">
+          <h2 class="text-2xl font-bold text-center mb-8">Berita & Kegiatan Terbaru</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news1.jpg" alt="Berita 1" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Kegiatan Sosialisasi Kesehatan</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Edukasi kesehatan kepada masyarakat Blora untuk hidup sehat dan bersih.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news2.jpg" alt="Berita 2" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Pemeriksaan Gratis</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Klinik MMC Blora mengadakan pemeriksaan kesehatan gratis untuk warga sekitar.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news3.jpg" alt="Berita 3" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Pelatihan Tim Medis</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Peningkatan kompetensi tim medis melalui pelatihan rutin dan workshop.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news4.jpg" alt="Berita 4" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Donor Darah Bersama</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Aksi donor darah bersama PMI untuk membantu sesama yang membutuhkan.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news5.jpg" alt="Berita 5" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Penyuluhan Gizi Seimbang</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Penyuluhan pentingnya gizi seimbang untuk anak-anak dan keluarga.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news6.jpg" alt="Berita 6" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Lomba Hidup Sehat</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Lomba antar RT untuk mendorong pola hidup sehat di lingkungan warga.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="aspect-w-1 aspect-h-1 w-full">
+                <img src="img/news7.jpg" alt="Berita 7" class="object-cover w-full h-full" loading="lazy" />
+              </div>
+              <div class="p-5 flex-1 flex flex-col">
+                <h3 class="font-bold text-lg mb-2">Seminar Kesehatan Wanita</h3>
+                <p class="text-gray-700 dark:text-gray-300 mb-4 flex-1">Seminar edukasi kesehatan khusus wanita bersama dokter spesialis MMC.</p>
+                <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-content">
+            <h2>Butuh Konsultasi Kesehatan?</h2>
+            <p>Tim medis profesional kami siap membantu konsultasi kesehatan Anda</p>
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
+              <a href="kontak.html" class="btn btn-secondary">Hubungi Kami</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>(0296) 123-4567</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@mmcblora.com</span>
+        </div>
+      </div>
+      <button class="cta-btn" onclick="konsultasi()"><i class="fas fa-comments"></i> Konsultasi</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-6 mt-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold text-purple-300 mb-2">Klinik MMC Blora</h3>
+            <p class="text-gray-300 mb-4">Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+            <div class="flex gap-3 mt-2">
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Layanan</h4>
+            <ul class="space-y-2">
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Konsultasi Umum</a></li>
+              <li><a href="mmc-skincare.html" class="text-gray-300 hover:text-purple-300 transition">MMC Skincare</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Laboratorium</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Radiologi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Kontak</h4>
+            <div class="space-y-2">
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-map-marker-alt text-purple-300"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-phone text-purple-300"></i> (0296) 123-4567</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-envelope text-purple-300"></i> info@mmcblora.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Klinik MMC Blora. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Detail Berita -->
+    <div id="newsModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden">
+      <div class="bg-white rounded-xl shadow-2xl max-w-xs w-full p-4 relative flex flex-col items-center">
+        <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold focus:outline-none">&times;</button>
+        <img id="modalImg" src="" alt="Detail Berita" class="w-full aspect-square object-cover rounded-lg mb-4" />
+        <h3 id="modalTitle" class="font-bold text-lg mb-2 text-center"></h3>
+        <p id="modalDesc" class="text-gray-600 text-center"></p>
+      </div>
+    </div>
+
+    <script>
+      // Data berita
+      const newsData = [
+        {
+          img: "img/news1.jpg",
+          title: "Kegiatan Sosialisasi Kesehatan",
+          desc: "Edukasi kesehatan kepada masyarakat Blora untuk hidup sehat dan bersih.",
+        },
+        {
+          img: "img/news2.jpg",
+          title: "Pemeriksaan Gratis",
+          desc: "Klinik MMC Blora mengadakan pemeriksaan kesehatan gratis untuk warga sekitar.",
+        },
+        {
+          img: "img/news3.jpg",
+          title: "Pelatihan Tim Medis",
+          desc: "Peningkatan kompetensi tim medis melalui pelatihan rutin dan workshop.",
+        },
+        {
+          img: "img/news4.jpg",
+          title: "Donor Darah Bersama",
+          desc: "Aksi donor darah bersama PMI untuk membantu sesama yang membutuhkan.",
+        },
+        {
+          img: "img/news5.jpg",
+          title: "Penyuluhan Gizi Seimbang",
+          desc: "Penyuluhan pentingnya gizi seimbang untuk anak-anak dan keluarga.",
+        },
+        {
+          img: "img/news6.jpg",
+          title: "Lomba Hidup Sehat",
+          desc: "Lomba antar RT untuk mendorong pola hidup sehat di lingkungan warga.",
+        },
+        {
+          img: "img/news7.jpg",
+          title: "Seminar Kesehatan Wanita",
+          desc: "Seminar edukasi kesehatan khusus wanita bersama dokter spesialis MMC.",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("newsModal");
+        const modalImg = document.getElementById("modalImg");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDesc = document.getElementById("modalDesc");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const detailBtns = document.querySelectorAll(".btn-detail-news");
+
+        detailBtns.forEach((btn, idx) => {
+          btn.addEventListener("click", () => {
+            const data = newsData[idx];
+            modalImg.src = data.img;
+            modalTitle.textContent = data.title;
+            modalDesc.textContent = data.desc;
+            modal.classList.remove("hidden");
+          });
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+          modal.classList.add("hidden");
+        });
+
+        // Tutup modal jika klik di luar konten modal
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

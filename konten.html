@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Full Page Running Text</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --speed: 20s;
+      --primary-color: #4f46e5;
+      --bg-color: #1e1b4b;
+      --text-color: #ffffff;
+    }
+
+    html, body, #marqueeArea {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .marquee-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    .marquee-track {
+      display: flex;
+      will-change: transform;
+      animation: marquee var(--speed) linear infinite;
+    }
+
+    .marquee-item {
+      font-size: 5vw;
+      font-weight: 700;
+      white-space: nowrap;
+      padding: 0 2vw;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .controls {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+      background: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+      border-radius: 50px;
+      backdrop-filter: blur(10px);
+    }
+
+    .controls button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .controls button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .controls input[type="range"] {
+      width: 150px;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-700 text-white">
+  <div id="marqueeContainer" class="marquee-wrap w-full"></div>
+  <div class="controls">
+    <input id="textInput" type="text" placeholder="Enter text" />
+    <input id="speedRange" type="range" min="5" max="60" value="20" />
+    <button id="playPauseBtn">⏸️</button>
+  </div>
+
+  <script>
+    // Default text items
+    let textItems = [
+      "Tanteeeeeeee~~~~~~~~~~",
+      "Sudah terbiasa terjadi tante",
+      "Teman datang ketika lagi butuh saja",
+      "Coba kalau lagi susah",
+      "Mereka semua menghilanggggggggggggggggggg~~~~~~~~~~"
+    ];
+
+    // DOM Elements
+    const marqueeContainer = document.getElementById('marqueeContainer');
+    const textInput = document.getElementById('textInput');
+    const speedRange = document.getElementById('speedRange');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    
+    let animationPaused = false;
+    let currentTrack = null;
+
+    // Initialize the marquee
+    function initMarquee() {
+      textInput.value = textItems.join(' | ');
+      speedRange.value = 20;
+      renderMarquee();
+      
+      // Event listeners
+      textInput.addEventListener('input', handleTextInput);
+      speedRange.addEventListener('input', updateSpeed);
+      playPauseBtn.addEventListener('click', togglePlayPause);
+      document.addEventListener('keydown', (e) => {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          togglePlayPause();
+        }
+      });
+    }
+    
+    function handleTextInput() {
+      const text = textInput.value.trim();
+      if (text) {
+        textItems = text.split('|').map(item => item.trim()).filter(item => item);
+        if (textItems.length > 0) renderMarquee();
+      }
+    }
+    
+    function updateSpeed() {
+      const speed = speedRange.value;
+      document.documentElement.style.setProperty('--speed', `${speed}s`);
+      if (currentTrack) {
+        currentTrack.style.animation = 'none';
+        currentTrack.offsetHeight; // Trigger reflow
+        currentTrack.style.animation = `marquee ${speed}s linear infinite`;
+      }
+    }
+    
+    function togglePlayPause() {
+      if (!currentTrack) return;
+      animationPaused = !animationPaused;
+      currentTrack.style.animationPlayState = animationPaused ? 'paused' : 'running';
+      playPauseBtn.textContent = animationPaused ? '▶️' : '⏸️';
+    }
+    
+    function buildTrack() {
+      const track = document.createElement('div');
+      track.className = 'marquee-track';
+      
+      const createItemSet = () => {
+        const fragment = document.createDocumentFragment();
+        textItems.forEach((text, i) => {
+          const span = document.createElement('span');
+          span.className = 'marquee-item';
+          span.textContent = text;
+          fragment.appendChild(span);
+          if (i < textItems.length - 1) {
+            const gap = document.createElement('span');
+            gap.className = 'marquee-item opacity-70';
+            gap.textContent = '•';
+            fragment.appendChild(gap);
+          }
+        });
+        return fragment;
+      };
+      
+      track.appendChild(createItemSet());
+      track.appendChild(createItemSet()); // Duplicate for seamless loop
+      return track;
+    }
+    
+    function renderMarquee() {
+      marqueeContainer.innerHTML = '';
+      currentTrack = buildTrack();
+      marqueeContainer.appendChild(currentTrack);
+      updateSpeed();
+    }
+    
+    // Initialize everything when the page loads
+    document.addEventListener('DOMContentLoaded', initMarquee);
+      </script>
+</body>
+</html>

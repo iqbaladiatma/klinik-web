@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Klinik MMC Blora</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur z-[1000] shadow transition-all duration-300 ease-in-out translate-y-0">
+      <nav class="py-4">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-5">
+          <div class="flex items-center h-[60px] pl-2">
+            <img src="img/logo.png" alt="Logo Klinik MMC Blora" class="h-[150px] max-w-none md:h-[60px] md:max-w-[160px]" />
+          </div>
+          <div class="flex items-center gap-8" id="nav-menu">
+            <a href="index.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Beranda</a>
+            <a href="tentang-kami.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Tentang Kami</a>
+            <a href="layanan.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Layanan</a>
+            <a href="tim-dokter.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Tim Dokter</a>
+            <div class="relative group">
+              <a href="mmc-skincare.html" class="flex items-center gap-2 nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+              <div class="absolute top-full left-0 bg-white min-w-[160px] shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-50">
+                <a href="mmc-skincare.html#produk" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Produk</a>
+                <a href="mmc-skincare.html#perawatan" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Perawatan</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link active">Kontak</a>
+          </div>
+          <div class="flex flex-col cursor-pointer md:hidden" id="nav-toggle">
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-purple-50 to-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-purple-900 mb-2">Hubungi Kami</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">Kami siap membantu kebutuhan kesehatan Anda. Hubungi kami untuk informasi lebih lanjut atau buat janji temu</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-8">
+      <div class="max-w-5xl mx-auto px-4">
+        <!-- Contact Information -->
+        <section class="mb-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Form -->
+            <div>
+              <h2 class="text-2xl font-semibold mb-6 text-purple-900">Kirim Pesan</h2>
+              <form class="flex flex-col gap-4" onsubmit="submitContactForm(event)">
+                <div class="flex flex-col gap-2">
+                  <label for="name" class="font-medium text-gray-700">Nama Lengkap *</label>
+                  <input type="text" id="name" name="name" required class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="email" class="font-medium text-gray-700">Email *</label>
+                  <input type="email" id="email" name="email" required class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="phone" class="font-medium text-gray-700">Nomor Telepon *</label>
+                  <input type="tel" id="phone" name="phone" required class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="service" class="font-medium text-gray-700">Layanan yang Diminati</label>
+                  <select id="service" name="service" class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500">
+                    <option value="">Pilih Layanan</option>
+                    <option value="konsultasi-umum">Konsultasi Umum</option>
+                    <option value="spesialis">Konsultasi Spesialis</option>
+                    <option value="laboratorium">Pemeriksaan Laboratorium</option>
+                    <option value="radiologi">Pemeriksaan Radiologi</option>
+                    <option value="mmc-skincare">MMC Skincare</option>
+                    <option value="paket-kesehatan">Paket Kesehatan</option>
+                    <option value="lainnya">Lainnya</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label for="message" class="font-medium text-gray-700">Pesan *</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Tuliskan pesan atau pertanyaan Anda..." class="px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-500"></textarea>
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">Kirim Pesan</button>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <h2 class="text-2xl font-semibold mb-6 text-purple-900">Informasi Kontak</h2>
+              <div class="flex flex-col gap-6">
+                <div class="flex gap-4 items-start bg-purple-50 rounded-xl p-5 shadow">
+                  <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 text-purple-700 text-xl"><i class="fas fa-map-marker-alt"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-purple-900 mb-1">Alamat</h4>
+                    <p class="text-gray-700 mb-2">Jl. Pemuda No. 123, Blora, Jawa Tengah 58211</p>
+                    <a href="https://maps.google.com" target="_blank" class="inline-block bg-white border border-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-100 transition">Lihat di Google Maps</a>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start bg-purple-50 rounded-xl p-5 shadow">
+                  <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 text-purple-700 text-xl"><i class="fas fa-phone"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-purple-900 mb-1">Telepon</h4>
+                    <p class="text-gray-700">Utama: <a href="tel:+62296123456" class="text-purple-700 hover:underline">(0296) 123-4567</a></p>
+                    <p class="text-gray-700">IGD: <a href="tel:+62296123456" class="text-purple-700 hover:underline">(0296) 123-456</a></p>
+                    <p class="text-gray-700">WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" class="text-purple-700 hover:underline">0812-3456-7890</a></p>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start bg-purple-50 rounded-xl p-5 shadow">
+                  <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 text-purple-700 text-xl"><i class="fas fa-envelope"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-purple-900 mb-1">Email</h4>
+                    <p class="text-gray-700">Umum: <a href="mailto:info@mmcblora.com" class="text-purple-700 hover:underline">info@mmcblora.com</a></p>
+                    <p class="text-gray-700">Skincare: <a href="mailto:skincare@mmcblora.com" class="text-purple-700 hover:underline">skincare@mmcblora.com</a></p>
+                    <p class="text-gray-700">Administrasi: <a href="mailto:admin@mmcblora.com" class="text-purple-700 hover:underline">admin@mmcblora.com</a></p>
+                  </div>
+                </div>
+                <div class="flex gap-4 items-start bg-purple-50 rounded-xl p-5 shadow">
+                  <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-100 text-purple-700 text-xl"><i class="fas fa-clock"></i></div>
+                  <div>
+                    <h4 class="font-semibold text-purple-900 mb-1">Jam Operasional</h4>
+                    <div class="flex flex-col gap-1">
+                      <div class="flex justify-between w-56"><span class="font-medium">Senin - Jumat</span><span class="text-gray-600">08:00 - 21:00</span></div>
+                      <div class="flex justify-between w-56"><span class="font-medium">Sabtu</span><span class="text-gray-600">08:00 - 17:00</span></div>
+                      <div class="flex justify-between w-56"><span class="font-medium">Minggu</span><span class="text-gray-600">09:00 - 15:00</span></div>
+                      <div class="flex justify-between w-56 text-purple-700 font-semibold"><span>IGD</span><span>24 Jam</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="section">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Aksi Cepat</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-6">
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center hover:scale-105 transition">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-700 text-2xl mb-4"><i class="fas fa-calendar-plus"></i></div>
+              <h3 class="font-semibold text-purple-900 mb-2">Konsultasi Gratis</h3>
+              <p class="text-gray-700">Jadwalkan konsultasi dengan dokter pilihan Anda</p>
+              <button class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2" onclick="konsultasi()">
+                Konsultasi
+              </button>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center hover:scale-105 transition">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-700 text-2xl mb-4"><i class="fab fa-whatsapp"></i></div>
+              <h3 class="font-semibold text-purple-900 mb-2">Chat WhatsApp</h3>
+              <p class="text-gray-700">Hubungi kami langsung melalui WhatsApp untuk konsultasi cepat</p>
+              <a
+                href="https://wa.me/6281234567890"
+                class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i> Chat Sekarang
+              </a>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center hover:scale-105 transition">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-700 text-2xl mb-4"><i class="fas fa-phone-alt"></i></div>
+              <h3 class="font-semibold text-purple-900 mb-2">Telepon Langsung</h3>
+              <p class="text-gray-700">Hubungi hotline kami untuk informasi dan bantuan segera</p>
+              <a href="tel:+62296123456" class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">
+                <i class="fas fa-phone"></i> Telepon Sekarang
+              </a>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center hover:scale-105 transition">
+              <div class="w-16 h-16 flex items-center justify-center rounded-full bg-purple-100 text-purple-700 text-2xl mb-4"><i class="fas fa-ambulance"></i></div>
+              <h3 class="font-semibold text-purple-900 mb-2">Layanan Darurat</h3>
+              <p class="text-gray-700">Untuk kondisi darurat, hubungi IGD kami yang siaga 24 jam</p>
+              <a href="tel:+62296123456" class="bg-gradient-to-r from-purple-800 to-purple-400 text-white font-semibold px-6 py-3 rounded-full shadow hover:from-purple-900 hover:to-purple-600 transition-all w-fit mt-2">
+                <i class="fas fa-phone"></i> IGD 24 Jam
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Location Map -->
+        <section class="section">
+          <h2>Lokasi Kami</h2>
+          <div class="map-section">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.123456789!2d111.41789!3d-6.96456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTcnNTIuNCJTIDExMcKwMjUnMDQuNCJF!5e0!3m2!1sen!2sid!4v1640000000000!5m2!1sen!2sid"
+                width="100%"
+                height="400"
+                style="border: 0; border-radius: 15px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <div class="map-info">
+              <h3>Cara Menuju Klinik MMC Blora</h3>
+              <div class="directions">
+                <div class="direction-item">
+                  <i class="fas fa-car"></i>
+                  <div>
+                    <h4>Dengan Kendaraan Pribadi</h4>
+                    <p>Dari pusat kota Blora, ambil arah ke Jl. Pemuda. Klinik berada di sebelah kanan jalan, dekat dengan Bank BCA.</p>
+                  </div>
+                </div>
+                <div class="direction-item">
+                  <i class="fas fa-bus"></i>
+                  <div>
+                    <h4>Dengan Angkutan Umum</h4>
+                    <p>Naik angkot jurusan Terminal-Pemuda, turun di depan Bank BCA. Klinik MMC Blora berada tepat di sebelahnya.</p>
+                  </div>
+                </div>
+                <div class="direction-item">
+                  <i class="fas fa-motorcycle"></i>
+                  <div>
+                    <h4>Dengan Ojek Online</h4>
+                    <p>Gunakan aplikasi ojek online dan cari "Klinik MMC Blora" atau masukkan alamat Jl. Pemuda No. 123.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="parking-info">
+                <h4><i class="fas fa-parking"></i> Parkir Tersedia</h4>
+                <p>Kami menyediakan area parkir yang luas dan aman untuk kendaraan roda dua dan roda empat.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+          <h2>Pertanyaan Umum</h2>
+          <div class="faq-container">
+            <div class="bg-white dark:bg-gray-900 rounded-xl mb-4 shadow-lg overflow-hidden fade-in focus:outline-none focus:ring-2 focus:ring-purple-500" tabindex="0">
+              <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-purple-50 dark:hover:bg-purple-900 transition" onclick="toggleFAQ(this)">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200">Apakah perlu membuat janji temu terlebih dahulu?</h4>
+                <i class="fas fa-chevron-down text-purple-700 dark:text-purple-300"></i>
+              </div>
+              <div class="max-h-0 overflow-hidden transition-all duration-300">
+                <p class="px-5 pb-5 text-gray-700 dark:text-gray-300">
+                  Untuk konsultasi dokter spesialis, kami sangat menyarankan untuk membuat janji temu terlebih dahulu. Untuk dokter umum, Anda bisa datang langsung, namun membuat janji akan memastikan waktu tunggu yang lebih singkat.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl mb-4 shadow-lg overflow-hidden fade-in focus:outline-none focus:ring-2 focus:ring-purple-500" tabindex="0">
+              <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-purple-50 dark:hover:bg-purple-900 transition" onclick="toggleFAQ(this)">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200">Apakah menerima pasien BPJS?</h4>
+                <i class="fas fa-chevron-down text-purple-700 dark:text-purple-300"></i>
+              </div>
+              <div class="max-h-0 overflow-hidden transition-all duration-300">
+                <p class="px-5 pb-5 text-gray-700 dark:text-gray-300">Ya, kami menerima pasien BPJS Kesehatan. Pastikan kartu BPJS Anda masih aktif dan bawa kartu identitas saat berkunjung.</p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl mb-4 shadow-lg overflow-hidden fade-in focus:outline-none focus:ring-2 focus:ring-purple-500" tabindex="0">
+              <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-purple-50 dark:hover:bg-purple-900 transition" onclick="toggleFAQ(this)">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200">Bagaimana cara mendapatkan hasil laboratorium?</h4>
+                <i class="fas fa-chevron-down text-purple-700 dark:text-purple-300"></i>
+              </div>
+              <div class="max-h-0 overflow-hidden transition-all duration-300">
+                <p class="px-5 pb-5 text-gray-700 dark:text-gray-300">
+                  Hasil laboratorium biasanya dapat diambil 1-2 hari setelah pemeriksaan. Kami akan menghubungi Anda ketika hasil sudah siap. Anda juga bisa menanyakan langsung ke bagian laboratorium.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 rounded-xl mb-4 shadow-lg overflow-hidden fade-in focus:outline-none focus:ring-2 focus:ring-purple-500" tabindex="0">
+              <div class="flex justify-between items-center p-5 cursor-pointer hover:bg-purple-50 dark:hover:bg-purple-900 transition" onclick="toggleFAQ(this)">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200">Apakah ada layanan home visit?</h4>
+                <i class="fas fa-chevron-down text-purple-700 dark:text-purple-300"></i>
+              </div>
+              <div class="max-h-0 overflow-hidden transition-all duration-300">
+                <p class="px-5 pb-5 text-gray-700 dark:text-gray-300">Ya, kami menyediakan layanan kunjungan rumah untuk kondisi tertentu. Silakan hubungi kami untuk informasi lebih lanjut mengenai layanan ini.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>(0296) 123-4567</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@mmcblora.com</span>
+        </div>
+      </div>
+      <button class="cta-btn" onclick="konsultasi()"><i class="fas fa-comments"></i> Konsultasi</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#232946] text-white pt-16 pb-6 mt-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold text-purple-300 mb-2">Klinik MMC Blora</h3>
+            <p class="text-gray-300 mb-4">Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+            <div class="flex gap-3 mt-2">
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 hover:from-purple-900 hover:to-purple-600 transition"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 hover:from-purple-900 hover:to-purple-600 transition"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 hover:from-purple-900 hover:to-purple-600 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Layanan</h4>
+            <ul class="space-y-2">
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Konsultasi Umum</a></li>
+              <li><a href="mmc-skincare.html" class="text-gray-300 hover:text-purple-300 transition">MMC Skincare</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Laboratorium</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Radiologi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Kontak</h4>
+            <div class="space-y-2">
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-map-marker-alt text-purple-300"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-phone text-purple-300"></i> (0296) 123-4567</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-envelope text-purple-300"></i> info@mmcblora.com</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Jam Operasional</h4>
+            <div class="space-y-1">
+              <p class="text-gray-300">Senin - Jumat: 08:00 - 21:00</p>
+              <p class="text-gray-300">Sabtu: 08:00 - 17:00</p>
+              <p class="text-gray-300">Minggu: 09:00 - 15:00</p>
+              <p class="text-purple-300 font-bold">IGD: 24 Jam</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-400 text-sm">&copy; 2024 Klinik MMC Blora. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        const answer = faqItem.querySelector(".faq-answer");
+        const icon = element.querySelector("i");
+
+        faqItem.classList.toggle("active");
+
+        if (faqItem.classList.contains("active")) {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          answer.style.maxHeight = "0";
+          icon.style.transform = "rotate(0deg)";
+        }
+      }
+    </script>
+  </body>
+</html>

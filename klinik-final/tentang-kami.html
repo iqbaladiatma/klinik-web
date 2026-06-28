@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Klinik MMC Blora</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur z-[1000] shadow transition-all duration-300 ease-in-out translate-y-0">
+      <nav class="py-4">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-5">
+          <div class="flex items-center h-[60px] pl-2">
+            <img src="img/logo.png" alt="Logo Klinik MMC Blora" class="h-[150px] max-w-none md:h-[60px] md:max-w-[160px]" />
+          </div>
+          <div class="flex items-center gap-8" id="nav-menu">
+            <a href="index.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Beranda</a>
+            <a href="tentang-kami.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link active">Tentang Kami</a>
+            <a href="layanan.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Layanan</a>
+            <a href="tim-dokter.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Tim Dokter</a>
+            <div class="relative group">
+              <a href="mmc-skincare.html" class="flex items-center gap-2 nav-link dropdown-btn">MMC Skincare <i class="fas fa-chevron-down"></i></a>
+              <div class="absolute top-full left-0 bg-white min-w-[160px] shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-all duration-300 z-50">
+                <a href="mmc-skincare.html#produk" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Produk</a>
+                <a href="mmc-skincare.html#perawatan" class="block px-4 py-3 text-gray-900 hover:bg-gray-100">Perawatan</a>
+              </div>
+            </div>
+            <a href="kontak.html" class="relative text-gray-900 font-medium transition-colors duration-300 py-2 nav-link">Kontak</a>
+          </div>
+          <div class="flex flex-col cursor-pointer md:hidden" id="nav-toggle">
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+            <span class="w-6 h-1 bg-purple-800 my-1 block"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-12 bg-gradient-to-b from-purple-50 to-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-purple-900 mb-2">Tentang Kami</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto">Mengenal lebih dekat Klinik MMC Blora dan komitmen kami dalam memberikan pelayanan kesehatan terbaik</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-8">
+      <div class="max-w-5xl mx-auto px-4">
+        <!-- Sejarah -->
+        <section class="mb-16">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Sejarah Klinik MMC Blora</h2>
+          <div class="grid md:grid-cols-2 gap-8 items-center mt-6">
+            <div>
+              <p class="mb-4 text-gray-700">
+                Klinik MMC Blora didirikan pada tahun 2015 dengan visi menjadi penyedia layanan kesehatan terdepan di Kabupaten Blora. Dimulai dari sebuah klinik kecil dengan 3 dokter, kini kami telah berkembang menjadi pusat layanan
+                kesehatan terpadu yang melayani ribuan pasien setiap bulannya.
+              </p>
+              <p class="mb-4 text-gray-700">
+                Perjalanan kami dimulai dari komitmen untuk memberikan akses kesehatan yang berkualitas dan terjangkau bagi masyarakat Blora dan sekitarnya. Dengan dukungan tim medis yang profesional dan fasilitas yang terus diperbarui,
+                kami terus berinovasi dalam memberikan pelayanan kesehatan terbaik.
+              </p>
+              <p class="text-gray-700">Pada tahun 2020, kami memperluas layanan dengan membuka MMC Skincare, divisi khusus untuk perawatan kulit dan kecantikan yang menggunakan teknologi terkini dan produk berkualitas tinggi.</p>
+            </div>
+            <div>
+              <img src="img/welcome.jpg" alt="Sejarah Klinik MMC Blora" class="w-full rounded-xl shadow-lg" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Visi & Misi -->
+        <section class="mb-16">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Visi & Misi</h2>
+          <div class="grid md:grid-cols-2 gap-8 mt-6">
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-eye"></i></div>
+              <h3 class="text-xl font-semibold text-purple-900 dark:text-purple-200 mb-2">Visi</h3>
+              <p class="text-gray-700 dark:text-gray-300">
+                Menjadi pusat layanan kesehatan terpercaya dan terdepan di Jawa Tengah yang memberikan pelayanan kesehatan berkualitas tinggi, inovatif, dan berkemanusiaan untuk meningkatkan kualitas hidup masyarakat.
+              </p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-bullseye"></i></div>
+              <h3 class="text-xl font-semibold text-purple-900 dark:text-purple-200 mb-2">Misi</h3>
+              <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 text-left">
+                <li>Memberikan pelayanan kesehatan yang professional, aman, dan bermutu tinggi</li>
+                <li>Mengembangkan teknologi medis terkini untuk diagnosis dan pengobatan yang akurat</li>
+                <li>Membangun tim medis yang kompeten dan berkomitmen tinggi</li>
+                <li>Menciptakan lingkungan pelayanan yang nyaman dan ramah</li>
+                <li>Memberikan edukasi kesehatan kepada masyarakat</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nilai-Nilai -->
+        <section class="py-16 bg-purple-50">
+          <h2 class="text-2xl font-bold text-purple-900 mb-8 text-center">Nilai-Nilai Kami</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-6">
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-heart"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Profesionalisme</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Kami selalu mengutamakan profesionalisme dalam setiap layanan.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-shield-alt"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Integritas</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Kami berkomitmen untuk selalu jujur, transparan, dan dapat dipercaya dalam setiap tindakan medis.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-star"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Keunggulan</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Kami terus berinovasi dan meningkatkan kualitas layanan untuk memberikan yang terbaik.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-800 to-purple-400 text-white text-3xl mb-4 shadow-lg"><i class="fas fa-users"></i></div>
+              <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1 text-lg">Kolaborasi</h4>
+              <p class="text-gray-700 dark:text-gray-300 mb-2">Kami bekerja sama dalam tim yang solid untuk memberikan pelayanan kesehatan terpadu.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Fasilitas -->
+        <section class="section">
+          <h2>Fasilitas Kami</h2>
+          <div class="facilities-grid">
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Ruang Praktek"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Ruang Praktek Modern</h4>
+                <p class="text-gray-700 dark:text-gray-300">Ruang praktek yang nyaman dan steril dengan peralatan medis terkini</p>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Laboratorium"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Laboratorium Lengkap</h4>
+                <p class="text-gray-700 dark:text-gray-300">Laboratorium dengan teknologi canggih untuk pemeriksaan yang akurat dan cepat</p>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                alt="Ruang Tunggu"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-5">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Ruang Tunggu Nyaman</h4>
+                <p class="text-gray-700 dark:text-gray-300">Area tunggu yang luas, bersih, dan nyaman untuk pasien dan keluarga</p>
+              </div>
+            </div>
+            <div
+              class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 ease-in-out fade-in focus:outline-none focus:ring-2 focus:ring-purple-500 border border-purple-100 dark:border-purple-900"
+              tabindex="0"
+            >
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Apotek" class="w-full h-48 object-cover" />
+              <div class="p-5">
+                <h4 class="font-semibold text-purple-900 dark:text-purple-200 mb-1">Apotek In-House</h4>
+                <p class="text-gray-700 dark:text-gray-300">Apotek lengkap dengan obat-obatan berkualitas dan farmasis berpengalaman</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Penghargaan -->
+        <section class="section">
+          <h2>Penghargaan & Sertifikasi</h2>
+          <div class="awards-grid">
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h4>Klinik Terbaik 2023</h4>
+              <p>Penghargaan dari Dinas Kesehatan Jawa Tengah sebagai Klinik Terbaik kategori Pelayanan Prima</p>
+            </div>
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4>Sertifikat ISO 9001</h4>
+              <p>Sertifikasi manajemen mutu internasional untuk memastikan standar pelayanan terbaik</p>
+            </div>
+            <div class="award-card">
+              <div class="award-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h4>Akreditasi KEMENKES</h4>
+              <p>Terakreditasi oleh Kementerian Kesehatan RI dengan standar pelayanan yang tinggi</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-content">
+            <h2>Siap Melayani Kebutuhan Kesehatan Anda</h2>
+            <p>Tim profesional kami siap memberikan pelayanan kesehatan terbaik untuk Anda dan keluarga</p>
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-primary" onclick="konsultasi()">Konsultasi Gratis</a>
+              <a href="layanan.html" class="btn btn-secondary">Lihat Layanan Kami</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Info Float -->
+    <div class="contact-float">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>(0296) 123-4567</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@mmcblora.com</span>
+        </div>
+      </div>
+      <button class="cta-btn" onclick="konsultasi()">
+        <i class="fas fa-comments"></i>
+        Konsultasi
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-6 mt-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold text-purple-300 mb-2">Klinik MMC Blora</h3>
+            <p class="text-gray-300 mb-4">Layanan kesehatan terpercaya untuk keluarga Indonesia</p>
+            <div class="flex gap-3 mt-2">
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-500 transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Layanan</h4>
+            <ul class="space-y-2">
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Konsultasi Umum</a></li>
+              <li><a href="mmc-skincare.html" class="text-gray-300 hover:text-purple-300 transition">MMC Skincare</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Laboratorium</a></li>
+              <li><a href="layanan.html" class="text-gray-300 hover:text-purple-300 transition">Radiologi</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Kontak</h4>
+            <div class="space-y-2">
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-map-marker-alt text-purple-300"></i> Jl. Pemuda No. 123, Blora, Jawa Tengah</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-phone text-purple-300"></i> (0296) 123-4567</p>
+              <p class="flex items-center gap-2 text-gray-300"><i class="fas fa-envelope text-purple-300"></i> info@mmcblora.com</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-2">Jam Operasional</h4>
+            <div class="space-y-1">
+              <p class="text-gray-300">Senin - Jumat: 08:00 - 21:00</p>
+              <p class="text-gray-300">Sabtu: 08:00 - 17:00</p>
+              <p class="text-gray-300">Minggu: 09:00 - 15:00</p>
+              <p class="text-purple-300 font-bold">IGD: 24 Jam</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center text-gray-400 text-sm">&copy; 2024 Klinik MMC Blora. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
